@@ -18,7 +18,7 @@ export class ListPostsComponent {
   }
 
   initData(): void {
-    this.http.get<Post[]>('https://localhost:7278/api/Post').subscribe({
+    this.http.get<Post[]>('https://localhost:7195/api/Post').subscribe({
       next:(data: Post[]) => {
         this.posts = data;
         console.log(this.posts);
@@ -27,4 +27,3 @@ export class ListPostsComponent {
   }
 
 }
-

@@ -5,5 +5,5 @@ export type Post = {
     dateCreated: Date;
     userName: string;
     firstName: string;
-    lastname: string;
+    lastName: string;
 }
