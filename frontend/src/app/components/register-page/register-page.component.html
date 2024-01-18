@@ -1,35 +1,54 @@
-<form
-    name="form"
-    (ngSubmit)="onSubmit()"
-    #f="ngForm">
-
-    <label for="username">Username</label>
-    <input
-        type="text"
-        name="username"
-        [(ngModel)]="form.username"
-        required
-        #username="ngModel"/>
-    <label for="password">Password</label>
-    <input
-        type="password"
-        name="password"
-        [(ngModel)]="form.password"
-        required
-        #username="ngModel"/>
-    <label for="firstName">First Name</label>
-    <input
-        type="text"
-        name="firstName"
-        [(ngModel)]="form.firstName"
-        required
-        #username="ngModel"/>
-    <label for="lastName">Last Name</label>
-    <input
-        type="text"
-        name="lastName"
-        [(ngModel)]="form.lastName"
-        required
-        #username="ngModel"/>
-    <button>Submit</button>
-</form>
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <a class="back-button" routerLink="/login">
+        <span>&larr; Back</span>
+      </a>
+    <div class="container">
+        <div class="platform">
+            <h2>Register</h2>
+            <form
+            name="form"
+            (ngSubmit)="onSubmit()"
+            #f="ngForm">
+        
+            <label for="username">Username</label>
+            <input
+                type="text"
+                name="username"
+                [(ngModel)]="form.username"
+                required
+                #username="ngModel"/>
+            <label for="password">Password</label>
+            <input
+                type="password"
+                name="password"
+                [(ngModel)]="form.password"
+                required
+                #username="ngModel"/>
+            <label for="firstName">First Name</label>
+            <input
+                type="text"
+                name="firstName"
+                [(ngModel)]="form.firstName"
+                required
+                #username="ngModel"/>
+            <label for="lastName">Last Name</label>
+            <input
+                type="text"
+                name="lastName"
+                [(ngModel)]="form.lastName"
+                required
+                #username="ngModel"/>
+            <button type="submit">SUBMIT</button>
+        </form>
+        </div>
+    </div>
+    <script>
+        window.onload = function() {
+          const platform = document.querySelector('.platform');
+          platform.style.opacity = '1';
+        };
+      </script>
+</body>

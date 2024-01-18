@@ -1,4 +1,19 @@
-<div *ngFor="let post of posts">
-  <h3><a href="/posts/{{ post.id }}">{{ post.title }}</a></h3>
-  <p>by {{ post.firstName }} {{ post.lastName }} ; on {{ post.dateCreated }}</p>
-</div>
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <a class="back-button" href="/login">
+      <span>&larr; Logout</span>
+    </a>
+    <h2 class="page-heading">LIST OF POSTS</h2>
+    <div class="grid-container">
+      <div class="post" *ngFor="let post of posts">
+        <div class="post-content">
+          <h3><a href="/posts/{{ post.id }}">{{ post.title }}</a></h3>
+          <p>by <b>{{post.firstName}} {{post.lastName}}</b> <br> on {{post.dateCreated}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

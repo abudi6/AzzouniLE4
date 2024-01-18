@@ -1,4 +1,17 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
 
-<h3><a href="/posts/{{post?.id}}"> {{post?.title}} </a></h3>
-<p>by {{post?.firstName}} {{post?.lastName}}; on {{post?.dateCreated}}</p>
-<p>{{post?.body}}</p>
+<body>
+    <div class="container">
+        <a class="back-button" href="">
+            &larr; Back
+        </a>
+        <div class="platform">
+            <h3 class="page-heading"><a href="/posts/{{post?.id}}">{{post?.title}}</a></h3>
+            <p>by <b> <i>{{post?.firstName}} {{post?.lastName}}</i></b> on {{post?.dateCreated}}</p>
+            <p>{{post?.body}}</p>
+        </div>
+    </div>
+</body>
+
