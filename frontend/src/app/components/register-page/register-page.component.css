@@ -16,21 +16,15 @@ body {
     justify-content: center;
   }
   .back-button {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #fff;
-    color: #000;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    color: #007BFF;
+    margin-bottom: 20px;
+    display: block;
   }
   
   .back-button:hover {
-    background-color: #f6f6f6;
+    opacity:50%;
+    width: 30%;
   }
 
   .container {
@@ -82,6 +76,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 20px;
+    margin-top: 20px;
+
   }
   
   form button:hover {
@@ -159,7 +155,7 @@ body {
   button {
     padding: 10px 20px;
     background-color: #000000;
-    color: #fff;
+    color: #b55d5d;
     border: none;
     border-radius: 5px;
     cursor: pointer;
